@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout3</title>
+
+
+   <!--
+Lab 15: Layout1
+Group:
+1. Name: Noor Lailawati Abu Bakar, Matrix No: Sx222141ECJHF03, Github ID:  akma-laila
+2. Name: Azraei Hamiduddin bin Abdul, Matrix No: SX222146ECJHF03, Github ID: Hamiduddin-aziz
+-->
+
+    <style>
+
+      body{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .header, .footer{
+        background-color: blue;
+        color: aliceblue;
+        width: 100%;
+        text-align: center;
+      }
+      .topnav a {
+        color: aliceblue; 
+        text-decoration: none;
+      }
+
+      .topnav {
+        width: 100%;
+        background-color: cadetblue;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .row, .leftcolumn,.rightcolumn{
+        display: flex;
+        gap: 10px;
+      }
+
+      .leftcolumn,.rightcolumn{
+        flex-direction: column; 
+      }
+
+      .card{
+        background-color: cyan;
+        padding: 10px;
+      }
+
+      .img{
+        background-color: darkblue;
+      }
+
+      .footer{
+        background-color: darkgoldenrod;
+        margin-top: 10px;
+      }
+
+      .card .img p {
+         margin: 0;
+      }
+
+    </style>
+ 
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Magazine</h1>
+    </div>
+
+    <div class="topnav">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#" style="float: right">Link</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Apr 25, 2022</h5>
+          <div class="img" style="height: 100px">Image</div>
+
+          <p>
+            UTM has three campuses – the main campus is in Skudai, and was the
+            first university in the state of Johor. It has an area of 1148
+            hectares and is the second largest public university after
+            Universiti Putra Malaysia (UPM). It is about 20 km north of the
+            state capital, Johor Bahru.
+          </p>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Apr 25, 2022</h5>
+          <div class="img" style="height: 100px">Image</div>
+
+          <p>
+            The branch campus is situated in Jalan Semarak within Kuala Lumpur,
+            with an area of 38 hectares. The branch campus accommodates diploma
+            students, part-time students (also known as the SPACE program),
+            undergraduate students (Malaysia-Japan International Institute of
+            Technology) and foreign students taking business courses.
+          </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Editor</h2>
+          <div class="img" style="height: 100px">Image</div>
+          <p>
+            Tiada siapa yang suka pada sakit, yang ingin mencari penyakit and
+            ingin berpenyakit, hanya kerana ianya sakit...
+          </p>
+        </div>
+        <div class="card">
+          <h3>Photos</h3>
+          <div class="img" style="height: 50px"><p>Image</p></div>
+          <div class="img" style="height: 50px"><p>Image</p></div>
+          
+        </div>
+        <div class="card">
+          <h3>Contact Us</h3>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>

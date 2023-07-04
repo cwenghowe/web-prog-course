@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout1</title>
+    <!--
+Lab 15: Layout1
+Group:
+1. Name: Noor Lailawati Abu Bakar, Matrix No: Sx222141ECJHF03, Github ID:  akma-laila
+2. Name: Azraei Hamiduddin bin Abdul, Matrix No: SX222146ECJHF03, Github ID: Hamiduddin-aziz
+-->
+    <Style>
+        .container{
+          display: grid;
+          grid-template-columns: repeat(8,1fr);
+          grid-template-rows: repeat(8,1fr);
+          height: 100vh;
+          width: 100%;
+          gap: 10px;
+          
+        }
+
+        .header1,.nav2,.article3,.ad4,.footer5{
+            padding: 1rem;
+        }
+  
+        .header1{
+          grid-area: 1/1/2/9;
+          background-color: aqua;
+        }
+  
+        .nav2{
+          grid-area: 2/1/7/3;
+          background-color: blue;
+        }
+  
+        .article3{
+          grid-area: 2/3/7/8;
+          background-color: blueviolet;
+        }
+        .ad4{
+          grid-area:2/8/7/9 ;
+          background-color: brown;
+        }
+        .footer5{
+          grid-area: 7/1/8/9;
+          background-color: chartreuse;
+        }      
+  
+      </Style>
+</head>
+<body>
+    <div class="container">
+        <div class="header1">Header</div>
+        <div class="nav2">Nav</div>
+        <div class="article3">Article</div>
+        <div class="ad4"> Ads</div>
+        <div class="footer5">Footer</div>
+    </div>
+</body>
+</html>

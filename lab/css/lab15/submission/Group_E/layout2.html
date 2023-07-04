@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flexbox</title>
+    <!--
+Lab 15: Layout1
+Group:
+1. Name: Noor Lailawati Abu Bakar, Matrix No: Sx222141ECJHF03, Github ID:  akma-laila
+2. Name: Azraei Hamiduddin bin Abdul, Matrix No: SX222146ECJHF03, Github ID: Hamiduddin-aziz
+-->
+
+<style>
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .title{
+    background-color: blue;
+    flex: 100%;
+    text-align: center;
+    color: aliceblue;
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+    background-color: chartreuse;
+    padding: 1em;
+  }
+
+
+  section{
+    display: flex;
+    gap: 1em;
+  }
+
+</style>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <header>
+          <h1>Universiti Teknologi Malaysia</h1>
+        </header>
+      </div>
+      <section>
+        <article >
+          <h2>Campuses</h2>
+          <p>
+            UTM has three campuses – the main campus is in Skudai, and was the
+            first university in the state of Johor. It has an area of 1148
+            hectares and is the second largest public university after
+            Universiti Putra Malaysia (UPM). It is about 20 km north of the state
+            capital, Johor Bahru.
+          </p>
+        </article>
+        <article>
+          <h2>Residential colleges</h2>
+          <p>
+            UTM has on-campus hostel blocks that provide accommodation for
+            students. The hostel blocks are grouped into units known as colleges,
+            for simplifying administration. Each college has three or more hostel
+            blocks under their administration. UTM has 12 colleges, which can
+            accommodate 17,500 students. Among the facilities provided at each
+            residential college are a cafeteria, a multipurpose hall, a Muslim
+            prayer room, tennis courts, an internet and computer center, a
+            convenience store and a common room.
+          </p>
+        </article>
+        <article>
+          <div>
+            <p>
+              UTM can provide accommodation for outsiders, i.e. parents or
+              relatives, visiting friends etc., with Scholar's Inn @ UTM JB and
+              Scholar's Inn @ UTM KL. The Scholar's Inn @ UTMKL is a city campus
+              hotel at Jalan Semarak, in the heart of Kuala Lumpur. Located within
+              the Universiti Teknologi Malaysia Kuala Lumpur campus and
+              approximately 10 minutes’ drive from KLCC/ Petronas Twin Towers, the
+              hotel is also within range of tourist spots such as the National
+              Library, National Art Gallery, Istana Budaya and the Golden
+              Triangle. Scholar's Inn @ UTMKL comprises 56 rooms and studios, a
+              meeting room, a business centre and the Scholar's Deli.
+            </p>
+          </div>
+          <div>
+            <button>Academic</button>
+            <button>Faculty</button>
+            <button>Education</button>
+            <button>Innovation</button>
+            <button>Networking</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

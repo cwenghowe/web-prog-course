@@ -1,0 +1,101 @@
+ nav, ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+header img {
+    margin-right: 10px;
+    width: 50px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+nav {
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+li {
+    margin-right: 10px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+
+article img {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+
+main {
+    border: #000 solid;
+    padding: 30px;
+}
+
+article {
+    border: #000 solid;
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.newspaper-paragraph {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.brmedium {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.comment,
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+footer {
+    text-decoration: underline;
+    margin: auto;
+  }
