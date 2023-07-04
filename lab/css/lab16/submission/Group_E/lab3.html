@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+            <!--
+Lab 16: Layout1
+Group:
+1. Name: Noor Lailawati Abu Bakar, Matrix No: Sx222141ECJHF03, Github ID:  akma-laila
+2. Name: Azraei Hamiduddin bin Abdul, Matrix No: SX222146ECJHF03, Github ID: Hamiduddin-aziz
+-->
+    <style>
+       body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background:linear-gradient(white,darkturquoise);
+      }
+
+      .login-box  {
+        width: 300px;
+        margin: 200px auto;
+        padding: 20px;
+        background-color: darkslategray  ;
+        border-radius: 10px;
+      }
+
+      .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color:aliceblue;
+      }
+
+      .user-box {
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .user-box input[type="text"],
+      .user-box input[type="password"] {
+        width: 93%;
+        padding: 10px;
+        font-size: 16px;
+        color:white;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        background: transparent;
+      }
+
+      .user-box label {
+        position: absolute;
+        top: 0;
+        right:224px ;
+        padding: 10px;
+        font-size: 16px;
+        color:white;
+        transition: 0.5s;
+        pointer-events: none;
+      }
+
+      .user-box input[type="text"]:focus ~ label,
+      .user-box input[type="password"]:focus ~ label,
+      .user-box input[type="text"]:valid ~ label,
+      .user-box input[type="password"]:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: darkturquoise;
+        font-size: 12px;
+      }
+
+     
+
+      a{
+        text-decoration: none;
+        display: inline-block;
+        background: transparent;
+        color: darkturquoise;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      a:hover {
+        color: white;
+        box-shadow: 0 0 20px 0 darkturquoise;
+        background-color: darkturquoise;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="" />
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="" />
+          <label>Password</label>
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+  </body>
+</html>

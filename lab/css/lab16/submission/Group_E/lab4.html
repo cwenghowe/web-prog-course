@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTMtravel</title>
+            <!--
+Lab 16: Layout1
+Group:
+1. Name: Noor Lailawati Abu Bakar, Matrix No: Sx222141ECJHF03, Github ID:  akma-laila
+2. Name: Azraei Hamiduddin bin Abdul, Matrix No: SX222146ECJHF03, Github ID: Hamiduddin-aziz
+-->
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: arial,sans-serif;
+      }
+
+      .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url(mal3.jpeg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      header{
+        display: flex;
+        padding: 30px;
+      }
+
+      h2{
+        -webkit-text-stroke: 0.5px black;
+      }
+
+      nav{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      a{
+        text-decoration: none;
+        color: aliceblue;
+      }
+
+      .cover{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        gap: 15px;
+      }
+
+      .cover h1{
+        color: red;
+        -webkit-text-stroke: 0.5px black;
+      }
+
+      .btn{
+        color: red;
+        border: solid red 0.5px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .btn:hover{
+        color: white;
+        background-color: red;
+      }
+
+      input[type="submit"]{
+        width: 100px;
+        padding: 10px;
+        color: white;
+        background-color: red;
+        border: 0;
+        margin: 0;
+      }
+
+      input[type="search"]{
+        padding: 10px;
+        width: 300px;
+        border: 0;
+        margin: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>
+          <a href="#"><i class="ion-plane"></i> UTMtravel</a>
+        </h2>
+        <nav>
+          <ul>
+            <li>
+                <a class="btn" href="#" title="Register / Log In"
+                  >Register/Log In</a
+                >
+              </li>
+            <li>
+              <a href="#" title="Hotels">Hotels</a>
+            </li>
+            <li>
+              <a href="#" title="Flights">Flights</a>
+            </li>
+            <li>
+              <a href="#" title="Tours">Tours</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </header>
+
+      <div class="cover">
+        <h1>Discover what's out there.</h1>
+        <form class="flex-form">
+          <label for="from">
+            <i class="ion-location"></i>
+          </label>
+          <input type="search" placeholder="Where do you want to go?" />
+          <input type="submit" value="Search" />
+        </form>
+       
+      </div>
+    </div>
+  </body>
+</html>
