@@ -1,0 +1,40 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+table{
+    border: 1px solid;
+}
+
+td{
+    border: 1px solid;
+}
+
+
+.betweenline{
+
+    background-color: white;
+    float: left;
+    position: absolute;
+}
+
+.blueline{
+        width: fit-content;
+        height: fit-content;
+        border: 1px blue solid;
+        margin: 0 auto;
+        
+        
+}
+
+.greyline{
+    
+    text-align: left;
+    padding: 15px;
+    border: 1px gray solid;
+    width: 650px;
+    height: fit-content;
+    margin: 15px;
+}
