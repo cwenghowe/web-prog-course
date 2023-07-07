@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(232, 244, 148);
+}
+
+#title {
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.master-div-style {
+    background-color: rgb(240, 240, 240);
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#description {
+    text-align: center;
+}
+
+div.fields {
+    margin-left: 0;
+}
+
+.form-rows {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.labels {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.fields {
+    flex: 1;
+    float: left;
+}
+
+.input-fields {
+    width: 65%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.dropdown {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.radio {
+    flex: 1;
+    margin-right: 50px;
+    float: left;
+    clear: both;
+}
+
+input {
+    flex: 1;
+    float: left;
+}
+
+.radio label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    display: inline-table;
+    vertical-align: bottom;
+    margin-top: 5px;
+}
+
+input #time-of-day {
+    padding: 0px;
+    flex: 1;
+    float: left;
+
+}
+
+input #feelings {
+    padding: 0px;
+}
+
+#event-details {
+    display: flex;
+    align-items: center;
+}
+
+.user-selection {
+    margin-right: 5px;
+}
+
+.user-selection[type="radio"] {
+    float: left;
+    clear: both;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: rgb(17, 236, 17);
+    text-align: center;
+    width: 10%;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+#time-of-day {
+    padding: 0px;
+    margin-top: 10px;
+}
+
+#feelings {
+    padding: 0px;
+    margin-top: 20px;
+
+}

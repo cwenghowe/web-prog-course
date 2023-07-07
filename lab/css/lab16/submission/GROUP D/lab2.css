@@ -1,0 +1,96 @@
+body {
+    background-image: url("mal2.jpeg");
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 80%;
+
+
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+header>p {
+    font-style: italic;
+    position: relative;
+    top: -20px;
+}
+
+.container>form {
+    position: relative;
+    width: 700px;
+    height: 100%;
+    top: -20px;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-color: rgb(54, 54, 54);
+    justify-content: center;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+.container>form>.form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.container>form>.form-group>input {
+    border-radius: 5px;
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-top: 2px;
+    border-width: 0px;
+}
+
+.container>form>.form-group>input::placeholder {
+    color: rgba(0, 0, 0, 0.37);
+    position: relative;
+    top: -5px;
+}
+
+.container>form>.form-group>textarea::placeholder {
+    color: rgba(0, 0, 0, 0.37);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 200px;
+}
+
+.container>form>.form-group>textarea {
+    height: 100px;
+}
+
+.container>form>.form-group>select {
+    border-radius: 5px;
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-top: 2px;
+    position: relative;
+    top: -15px;
+}
+
+button {
+    background-color: hwb(120 5% 42% / 0.822);
+    color: aliceblue;
+    height: 30px;
+    border: 0px;
+    border-radius: 2px;
+}
