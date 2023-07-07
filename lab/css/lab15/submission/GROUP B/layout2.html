@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <!--
+    Lab 15_2: FLEXBOX
+    Group:
+    1. Name: SANTHYA MUNIAPPAN, Matric No: SX220761ECJHS03,Github id : SanthyaM
+    2. Name: SUMATHI A/P  KESAVAN, Matric No: SX212327ECJHF03,Github id : sumathi2510
+    3. Name: MOHAMAD LUTHFI SHOHIME, Matric No: SX222134ECJHF03,Github id : luthfimohamad09
+    -->
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      .header {
+        background-color: blue;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        width: 98%;
+        margin: 5px;
+      }
+      .flex-container {
+                    display: flex;
+                    background-color: white;
+                  }
+      
+           
+           .flex-container > div {
+             background-color: greenyellow;
+             width: 400px;
+             margin: 10px;
+             text-align: justify;
+             line-height: 20px;
+             font-size: 20px;
+             height: 480px;
+           }
+      
+      .column {
+        
+        width: 34%;
+        padding: 20px;
+      }
+      
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      button {
+             background-color:white; 
+             border: 1px solid black;
+             color: black;
+             padding: 10px 15px;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 15px;
+             margin: 4px 2px;
+             cursor: pointer;
+           }
+      
+      </style>
+      </head>
+      <body>
+      
+      <div class="header">
+                 <h1>Universiti Teknologi Malaysia</h1>
+               </div>
+      
+      <div class="flex-container">    
+       <article class="flex-container">
+      <div class="row">
+        
+        <section>
+          <h2>Campuses</h2>
+          <p>UTM has three campuses – the main campus is in Skudai, and was thefirst university in the state of Johor. 
+            It has an area of 1148 hectares and is the second largest public university after Universiti Putra Malaysia (UPM). 
+            It is about 20 km north of the state capital, Johor Bahru.</p>
+          
+        
+          </div>
+        </article>
+               </section>
+        
+       
+        
+               
+        <section>
+       <article class="flex-container">
+        <div class="column">
+          <h2>Residential colleges</h2>
+          <p>UTM has on-campus hostel blocks that provide accommodation for students.
+            The hostel blocks are grouped into units known as colleges,for simplifying administration. Each college has three or more 
+            hostel blocks under their administration. UTM has 12 colleges, which can accommodate 17,500 students. Among the facilities 
+            provided at each residential college are a cafeteria, a multipurpose hall, a Muslim prayer room, tennis courts, an internet and computer center, 
+            a convenience store and a common room.</p>
+        </div>
+                 </article>
+               </section>
+        
+        
+      <section>
+       <article class="flex-container">
+        <div class="column">
+          <p>UTM can provide accommodation for outsiders, i.e. parents or relatives, visiting friends etc., with Scholar's Inn @ UTM JB 
+            and Scholar's Inn @ UTM KL. The Scholar's Inn @ UTMKL is a city campus hotel at Jalan Semarak, in the heart of Kuala Lumpur. 
+            Located within the Universiti Teknologi Malaysia Kuala Lumpur campus and approximately 10 minutes’ drive from KLCC/ Petronas Twin Towers, 
+            the hotel is also within range of tourist spots such as the National Library, National Art Gallery, Istana Budaya and the Golden Triangle. 
+            Scholar's Inn @ UTMKL comprises 56 rooms and studios, a meeting room, a business centre and the Scholar's Deli.</p>
+                  <div>
+                      <button>Academic </button>
+                       <button>Faculty</button>
+                       <button>Education</button>
+                       <button>Innovation</button>
+                       <button>Networking</button>
+                  </div>
+        </div>
+      </article>
+      </section> 
+      
+
+  </body>
+</html>
+      
+      
+      

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT TASK 1</title>
+    <!--
+    Lab 15_1: LAYOUT TASK 1
+    Group:
+    1. Name: SANTHYA MUNIAPPAN, Matric No: SX220761ECJHS03,Github id : SanthyaM
+    2. Name: SUMATHI A/P  KESAVAN, Matric No: SX212327ECJHF03,Github id : sumathi2510
+    3. Name: MOHAMAD LUTHFI SHOHIME, Matric No: SX222134ECJHF03,Github id : luthfimohamad09
+    -->
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+      }
+
+      .header {
+        margin: 10px;
+        background-color: yellow;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .column {
+        float: left;
+        background-color: white;
+        width: 33%;
+        height:50%;
+        padding: 5px;
+      }
+      
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .card {
+      background-color: yellow;
+      padding: 250px;
+      margin-top: 10px;
+      }
+
+       .footer {
+        margin: 10px;
+        background-color: yellow;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      
+      </style>
+      </head>
+      <body>
+      
+      <div class="header">
+        <h1>Header</h1>
+      </div>
+      
+      
+      <div class="row">
+        <div class="column">
+        <div class="card">
+          <h2>Nav</h2>
+        </div>
+        </div>
+        
+        <div class="column">
+        <div class="card">
+          <h2>Article</h2>
+        </div>
+        </div>
+        
+        <div class="column">
+        <div class="card">
+          <h2>Ads</h2>
+           </div>
+        </div>
+       </div> 
+       
+        <div class="footer">
+        <h2>Footer</h2>
+      </div>
+      
+      </body>
+      </html>
+      
