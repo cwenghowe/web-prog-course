@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Medical Form</title>
+    <!--
+     Name: NUR ALIAA MOHD ARIF
+     Matric No: SX222139ECJHS03
+     Github id : alizan00
+
+     Lab 9: HTML Forms
+    -->
+
+    <style>
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+            text-align: center;
+        }
+
+        table {
+            border: 1px solid;
+        }
+
+        td {
+            border: 1px solid;
+        }
+
+        .txtInput {
+            width: 95%;
+            height: 70%;
+            padding: 1;
+            margin: 1;
+            border: 1;
+        }
+
+        .txtBetweenLine {
+            background-color: white;
+            float: left;
+            position: absolute;
+        }
+
+        #blueLine {
+            width: fit-content;
+            height: fit-content;
+            border: 1px blue solid;
+            margin: 0 auto;
+        }
+
+        .greyLine {
+            text-align: left;
+            padding: 15px;
+            border: 1px gray solid;
+            width: fit-content;
+            height: fit-content;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Medical Form</strong></h1>
+    
+    <div id="blueLine">
+
+        <form>
+            <div class="greyLine" style="width: 700px;">
+                <div class="txtBetweenLine" style="top: 90px;" ;>Personal Information</div>
+                <table >
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" name="First Name"></td>
+                        <td>Gender</td>
+                        <td>
+                            <label><input type="radio" name="Gender" >Female
+                            </label>
+                            <label>
+                                <input type="radio" name="Gender" > Male 
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" Name = "Last Name"></td>
+                        <td>Nationality</td>
+                        <td><select name="Nationality">
+                            <option value="Canadian">Canadian</option>
+                            <option value="Malaysian">Malaysian</option>
+                            <option value="Indonesian">Indonesian</option>
+                            <option value="Korean">Korean</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td colspan="3"> <textarea name="Address" id="Address" rows="6" style="width: 70%;" ></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="black" style="width: 700px;">
+                <div class="float" style=" top: 300px ; ">
+                    Medical History
+                </div>
+                <input type="checkbox" name="Smallpox" >Smallpox
+                <input type="checkbox" name="Mumps">Mumps
+                <input type="checkbox" name="Dizziness">Dizziness
+                <input type="checkbox" name="Sneezing">Sneezing
+            </div>
+            
+            <div class="black" style="width: 800px;">
+                <div class="float" style=" top: 370px ;">
+                    Current Medication
+                </div>
+                Are you currently taking any medication? 
+                <label>
+                    <input type="radio" name="take medication">Yes
+                </label>
+                <label >
+                    <input type="radio" name="take medication">No
+                </label> <br>
+                If you are currently taking medication, please indicate it in the space below: <br>
+                <textarea name="" id="" cols="80" rows="10" style="margin: 1px;"></textarea>
+            </div>
+            <div style="margin: 15px;" >
+                <input type="submit" name="Submit">
+                <input type="reset" name = "Reset">
+            </div>
+        
+</body>
+</html>
