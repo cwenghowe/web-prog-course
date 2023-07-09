@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LAB 6</title>
+    <!--
+      Name     : MUHAMMAD AIZAT BIN AB RASHID
+      Matrix No: SX220320ECJHS03
+      Github id: Aezatexpada
+
+     Lab 6: HTML Table
+    -->
+    <style>
+       table
+       {
+           border-collapse: collapse;
+           border: 2px solid;
+           width: 700px;
+       }
+
+       td, th
+       {
+           border: 2px solid black;
+           padding: 8px;
+           text-align: center;
+           width: 100px;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+    </style>
+</head>
+
+<body>
+    
+<table>
+  <tr>
+      <th><b>Flight No</b></th>
+      <th><b>Place</b></th>
+      <th><b>Destination</b></th>
+      <th colspan="2"><b>Time</b></th>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Arrival</td>
+      <td>Departure</td>
+  </tr>
+</table>
+
+<br>
+
+<table>
+   <tr>
+       <td rowspan="2" style="vertical-align: top;">Time</td>
+       <th><b>Johor Bahru</b></th>
+       <th><b>Jakarta</b></th>
+       <th><b>Dhaka</b></th>
+       <th><b>Jeddah</b></th>
+   </tr>
+   <tr>
+       <td>3.30 pm</td>
+       <td>2.30 pm</td>
+       <td>1.30 pm</td>
+       <td>10.30 am</td>
+   </tr>
+</table>
+
+<br>
+
+<table>
+   <tr>
+       <td style="background-color:rgb(0, 119, 255);" colspan="3" style="padding:3%">BLUE</td>
+   </tr>
+   <tr>
+       <td style="background-color:Red;">RED</td>
+       <td style="background-color:Green;">GREEN</td>
+       <td style="background-color:Yellow;">YELLOW</td>
+   </tr>
+</table>
+
+<br>
+
+<table>
+   <tr>
+       <td>1</td>
+       <td>2</td>
+       <td>3</td>
+       <td>4</td>
+   </tr>
+   <tr>
+       <td>5</td>
+       <td colspan="2" rowspan="2"><b>Image</b></td>
+       <td>6</td>
+   </tr>
+   <tr>
+       <td>7</td>
+       <td>8</td>
+   </tr>
+   <tr>
+       <td>9</td>
+       <td>10</td>
+       <td>11</td>
+       <td>12</td>
+   </tr>
+</table>
+</body>
+</html>
