@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LAB 9</title>
+    <!--
+      Name     : MUHAMMAD AIZAT BIN AB RASHID
+      Matrix No: SX220320ECJHS03
+      Github id: Aezatexpada
+ 
+
+Lab 9: HTML Forms
+-->
+    <style type="text/css">
+      table,
+      th,
+      td {
+        width: 600px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+      }
+     
+      form {
+        width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="process.php">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+          <tr>
+            <td>First Name</td>
+            <td><input type="text" name="first_name" /></td>
+            <td>Gender</td>
+            <td>
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+              /><label for="female">Female</label
+              ><input type="radio" id="male" name="gender" value="male" /><label
+                for="male"
+                >Male</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="last_name" /></td>
+            <td>Nationality</td>
+            <td>
+              <select name="nationality" id="nationality">
+                <option value="canadian">Canadian</option>
+                <option value="malaysian">Malaysian</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td colspan="3">
+              <textarea
+                id="address"
+                name="address"
+                rows="3"
+                cols="30"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Medical History</legend>
+        <input type="checkbox" id="smallpox" name="smallpox" value="" /><label
+          for="smallpox"
+          >Smallpox</label
+        >
+        <input type="checkbox" id="mumps" name="mumps" value="" /><label
+          for="mumps"
+          >Mumps</label
+        >
+        <input type="checkbox" id="dizziness" name="dizziness" value="" /><label
+          for="dizziness"
+          >Dizziness</label
+        >
+        <input type="checkbox" id="sneezing" name="sneezing" value="" /><label
+          for="sneezing"
+          >Sneezing</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Current Medication</legend>
+        <span>Are you currently taking any medication?</span>
+        <input type="radio" id="yes" name="question_1" value="yes" /><label
+          for="yes"
+          >Yes</label
+        ><input type="radio" id="no" name="question_1" value="no" /><label
+          for="yes"
+          >No</label
+        >
+        <p>
+          If you are currently taking any medication, please indicate it in the
+          space below:
+        </p>
+        <textarea
+          id="medication"
+          name="medication"
+          rows="10"
+          cols="100"
+        ></textarea>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
