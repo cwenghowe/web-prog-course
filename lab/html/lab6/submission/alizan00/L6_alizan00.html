@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab 6</title>
+
+    <!--
+        Name: NUR ALIAA MOHD ARIF
+        Matrix No: SX222139ECJF03
+        Github id: alizan00
+
+        Lab 6: HTML Table
+    -->
+
+    <style>
+        table,th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 20%;
+            padding: 5px;
+        }
+
+        td.blue {
+            background-color: #4287f5;
+            text-align: center;
+            height: 50px;
+        }
+
+        td.red {
+            background-color: red;
+            text-align: center;
+            height: 50px;
+        }
+
+        td.green {
+            background-color: #3fbf46;
+            text-align: center;
+            height: 50px;
+        }
+
+        td.yellow {
+            background-color: yellow;
+            text-align: center;
+            height: 50px;
+        }
+
+        .center {
+            text-align: center;
+            border: 3px solid green;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1024px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <table style="width:50%">
+            <tr>
+                <th>Flight No</th>
+                <th>Place</th>
+                <th>Destination</th>
+                <th colspan="2" style="width: 40%;">Time</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Arrival</td>
+                <td>Departure</td>
+            </tr>
+        </table>
+
+        <p></p>
+        <table>
+            <tr>
+                <th rowspan="2">Time</th>
+                <th>Johor Bahru</th>
+                <th>Jakarta</th>
+                <th>Dhaka</th>
+                <th>Jeddah</th>
+            </tr>
+            <tr>
+                <td>3:30 pm</td>
+                <td>2:30 pm</td>
+                <td>1:30 pm</td>
+                <td>10:30 am</td>
+            </tr>
+        </table>
+
+        <p></p>
+        <table style="width: 50%;">
+            <tr>
+                <td colspan="3" class="blue">BLUE</td>
+            </tr>
+            <tr>
+                <td class="red">RED</td>
+                <td class="green">GREEN</td>
+                <td class="yellow">YELLOW</td>
+            </tr>
+        </table>
+
+        <p></p>
+
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td colspan="2" rowspan="2" align="center"><b>Image</b></td>
+                <td>6</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
