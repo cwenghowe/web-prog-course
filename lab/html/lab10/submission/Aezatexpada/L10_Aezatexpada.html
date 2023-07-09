@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Form</title>
+    <!--
+      Name     : MUHAMMAD AIZAT BIN AB RASHID
+      Matrix No: SX220320ECJHS03
+      Github id: Aezatexpada
+
+     Lab 10: Application Form
+    -->
+</head>
+<body>
+    <form action="process.php">
+        <h1>Web Programming: Application Form</h1>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><select name="name"><option value="--Select--">--Select--</option></select></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" />
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" />
+                        <label for="female">Female</label>
+                    </td>
+                    <td>Date of Birth</td>
+                    <td><input type="date" id="birthday" name="birthday"></td>
+                </tr>
+                <tr>
+                    <td>Marital Status</td>
+                    <td>
+                        <select name="marital-status">
+                            <option value="--Select--">--Select--</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                        </select>
+                    </td>
+                    <td>Religion</td>
+                    <td>
+                        <select name="religion">
+                            <option value="--Select--">--Select--</option>
+                            <option value="islam">Islam</option>
+                            <option value="christianity">Christianity</option>
+                            <option value="hinduism">Hinduism</option>
+                            <option value="buddhism">Buddhism</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <table>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="text" name="phone"></td>
+                    <td>E-mail</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Address Line 1</td>
+                    <td><input type="text" name="address-line1"></td>
+                    <td>Address Line 2</td>
+                    <td><input type="text" name="address-line2"></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" name="city"></td>
+                    <td>State</td>
+                    <td>
+                        <select name="state">
+                            <option value="--Select--">--Select--</option>
+                            <option value="state1">State 1</option>
+                            <option value="state2">State 2</option>
+                            <option value="state3">State 3</option>
+                            <option value="state4">State 4</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Qualification Details</legend>
+            <table>
+                <tr>
+                    <td>No.</td>
+                    <td>Qualification</td>
+                    <td>University</td>
+                    <td>Passing Year</td>
+                    <td>CGPA</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>
+                        <select name="qualification1">
+                            <option value="--Select--">--Select--</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="university1"></td>
+                    <td><input type="text" name="passing-year1"></td>
+                    <td><input type="text" name="cgpa1"></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>
+                        <select name="qualification2">
+                            <option value="--Select--">--Select--</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="university2"></td>
+                    <td><input type="text" name="passing-year2"></td>
+                    <td><input type="text" name="cgpa2"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Language Knowledge</legend>
+            <table>
+                <tr>
+                    <td>Language</td>
+                    <td>Reading</td>
+                    <td>Writing</td>
+                    <td>Speaking</td>
+                </tr>
+                <tr>
+                    <td>B.Melayu</td>
+                    <td><input type="checkbox" name="reading-bm"></td>
+                    <td><input type="checkbox" name="writing-bm"></td>
+                    <td><input type="checkbox" name="speaking-bm"></td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td><input type="checkbox" name="reading-eng"></td>
+                    <td><input type="checkbox" name="writing-eng"></td>
+                    <td><input type="checkbox" name="speaking-eng"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Identification Details</legend>
+            <table>
+                <tr>
+                    <td>Identity Card Number</td>
+                    <td><input type="text" name="ic-number"></td>
+                
+                    <td>Passport Number</td>
+                    <td><input type="text" name="passport-number"></td>
+                </tr>
+                <tr>
+                    <td>Upload Photo</td>
+                    <td><input type="file" name="photo"></td>
+                
+                    <td>Upload Signature</td>
+                    <td><input type="file" name="signature"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
