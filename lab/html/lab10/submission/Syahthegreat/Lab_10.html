@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+ <!--
+     Name: MOHAMED SYAHARULNIZAM BIN VPS BATHUSHA HAMID
+     Matric No: SX211671ECJHF03
+     Github id: Syahthegreat
+     Lab 10: Application Form
+-->
+
+
+<style>
+
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.greyLine{
+    text-align: left;
+    padding: 15px;
+    border: 1px gray solid;
+    width: fit-content;
+    height: fit-content;
+    margin: 15px;
+}
+
+.textBetweenLine{
+    float: left;
+    position: absolute;
+    background-color: white;
+}
+
+.txtInput{
+    width: 50%;
+    height: 30%;
+    padding: 1;
+    margin: 1;
+    border: 1;
+}
+
+table{
+    width: 100%;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <h3> Web Programming: Application Form </h3>
+    
+    <center>
+        <form>
+            <div class="greyLine" style="width: 1000px;">
+                <div class="textBetweenLine" style="top: 53px;"> Personal Details </div>
+                <table>
+                    <tr>
+                        <td>Name </td>
+                        <td colspan="2">
+                            <select name="select">
+                                <option value="">--Select --</option>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                            </select>
+                            <input class="txtInput" type="text" name="name">
+                        </td>
+                        <td colspan="2"></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" id="Male" name="Gender" value="Male">Male
+                            <input type="radio" id="Female" name="Gender" value="Female">Female
+                        </td>
+                        <td>Date of Birth</td>
+                        <td>
+                            <input type="date" name="Birth">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marital Status</td>
+                        <td>
+                            <select name="Select">
+                                <option value="">--Select--</option>
+                                <option value="Maried">Maried</option>
+                                <option value="Single">Single</option>
+                            </select>
+                        </td>
+                        <td>Religion</td>
+                        <td>
+                            <select name="Select">
+                                <option value="">--Select--</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Hindhu">Hindhu</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="greyLine" style="width: 1000px;">
+                <div class="textBetweenLine" style="top: 172px;">Contact Details</div>
+                <table>
+                    <tr>
+                        <td>Phone</td>
+                        <td>
+                            <input class="txtInput" type="tel" name="telephone">
+                        </td>
+                        <td>E-mail</td>
+                        <td>
+                            <input class="txtInput" type="email" name="E-mail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address Line 1</td>
+                        <td>
+                            <input class="txtInput" type="text" name="Address1">
+                        </td>
+                        <td>Address Line 2</td>
+                        <td>
+                            <input class="txtInput" type="text" name="Address2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>
+                            <input class="txtInput" type="text" name="City">
+                        </td>
+                        <td>State</td>
+                        <td>
+                            <select name="select">
+                                <option value="">--Select--</option>
+                                <option value="">Simpang Satu</option>
+                                <option value="">Simpang Dua</option>
+                                <option value="">Simpang Tiga</option>
+                                <option value="">Simpang Ampat</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>    
+            </div>
+            <div class="greyLine" style="width: 1000px;">
+                <div class="textBetweenLine" style="top: 295px;">Qualification Details</div>
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Qualification</th>
+                        <th>University</th>
+                        <th>Passing Year</th>
+                        <th>CGPA</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>
+                            <select name="select">
+                                <option value="">--Select--</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="Degree">Degree</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="txtInput" type="text" name="University">
+                        </td>
+                        <td>
+                            <input class="txtInput" type="text" name="graduate">
+                        </td>
+                        <td>
+                            <input class="txtInput" type="number" name="CGPA">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>
+                            <select name="select">
+                                <option value="">--Select--</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="Degree">Degree</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="txtInput" type="text" name="University">
+                        </td>
+                        <td>
+                            <input class="txtInput" type="text" name="graduate">
+                        </td>
+                        <td>
+                            <input class="txtInput" type="number" name="CGPA">
+                        </td>
+                    </tr>
+                </table> 
+                </div>
+                <div class="greyLine" style="width: 1000px;">
+                    <div class="textBetweenLine" style="top: 415px;">Language Knowledge</div>
+                    <table>
+                        <tr>
+                            <th>Language</th>
+                            <td>Reading</td>
+                            <td>Writing</td>
+                            <td>Speaking</td>
+                        </tr>
+                        <tr>
+                            <td>B. Melayu</td>
+                            <td>
+                                <input type="checkbox" name="Reading">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Writing">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Speaking">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>
+                                <input type="checkbox" name="Reading">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Writing">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Speaking">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        
+                <div class="greyLine" style="width: 1000px;">
+                    <div class="textBetweenLine" style="top: 532px;">Identification Details</div>
+                    <table>
+                        <tr>
+                            <td>Identity Card Number</td>
+                            <td>
+                                <input class="txtInput" type="number" name="Identification">
+                            </td>
+                            <td>Passport Number</td>
+                            <td>
+                                <input class="txtInput" type="number" name="Passport">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Upload Photo</td>
+                            <td>
+                                <input type="file" id="photo" name="Upload">
+                            </td>
+                            <td>Upload Signature</td>
+                            <td>
+                                <input type="file" id="Signature" name="Upload">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        
+            <button type="submit">Submit</button>
+            <button onclick="history.back()">Back</button>
+        </form> 
+    </center> 
+</body>
+</html>
